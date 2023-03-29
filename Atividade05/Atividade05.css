@@ -1,0 +1,96 @@
+*{ 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    background: #f7dead;
+    height: 100vh;
+}
+
+
+header {
+    background-color: rgba(105, 1, 1, 1);
+}
+
+.container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.container img{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+}
+
+.container ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.container ul li{
+    margin: 0 25px;
+}
+
+section .imagem-banner {
+    width: 100%;
+    height: 450px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section div img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+section .card{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    border-radius: 15px;
+    border: 2px solid rgba(105, 1, 1, 1);
+    box-shadow: 2px 2px rgba(105, 1, 1, .2);
+    background:#f7dead;    
+}
+
+
+
+footer {
+    color: rgb(253, 253, 253);
+    font-size: 15px;
+    background-color: rgba(105, 1, 1, 1);
+    text-align: center;
+    margin-top: 100px;
+    margin: center;
+}
+
+
+li:hover{
+    background: #f7dead;
+    color: black;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border: black;
+    transform: scale(1.3);
+}
