@@ -1,0 +1,78 @@
+
+#meuDiv h1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#meuDiv {
+
+width: 500px;
+height: 500px;
+background-color: rgb(184, 177, 177);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+@media  (min-width:0) and (max-width: 420px) {
+    #meuDiv {
+        background-color: grey;
+    }
+    
+    #cores:after {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    #meuDiv {
+    background-color: orange;
+    }
+
+    #cores:after {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #meuDiv {
+    background-color: pink;
+    }
+
+    #cores:after {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    #meuDiv {
+    background-color: rgb(238, 20, 20);
+    }
+
+    #cores:after {
+        content: "Vermelho";
+    }
+}
+
+@media  (min-width: 1081px) and (max-width: 1366px) {
+    #meuDiv {
+    background-color: rgb(55, 55, 223);
+    }
+
+    #cores:after {
+        content: "Azul";
+    }
+}
+
+@media  (min-width: 1367px) and (max-width: 1920px) {
+    #meuDiv {
+    background-color: rgb(112, 112, 90);
+    }
+
+    #cores:after {
+        content: "Amarelo";
+    }
+}
