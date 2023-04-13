@@ -1,0 +1,45 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #d7e2d4;
+	text-align: center;
+}
+h1 {
+	margin-top: 50px;
+}
+#escolhas {
+	margin-top: 30px;
+}
+.btn {
+	font-size: 16px;
+	font-style: bold;
+	padding: 10px 20px;
+	margin: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(20, 66, 21);
+	color: white;
+	cursor: pointer;
+}
+
+#Reiniciar {
+	font-size: 16px;
+	padding: 10px 20px;
+	margin: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(52, 124, 54);
+	color: white;
+	cursor: pointer;
+}
+
+
+.btn:hover {
+	background-color: #69b16c;
+}
+
+#resultado {
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
