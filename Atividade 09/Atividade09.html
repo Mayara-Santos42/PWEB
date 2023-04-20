@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Funções Matemáticas</title>
+  <link rel="stylesheet" href="Atividade09.css">
+  <script src="Atividade09.js"></script>
+</head>
+<body>
+  <h1>Funções Matemáticas</h1>
+  <h2>Maior Número</h2>
+  <p>Digite três números:</p>
+  <input type="number" id="num1">
+  <input type="number" id="num2">
+  <input type="number" id="num3">
+  <button onclick="mostrarMaiorNumero()">Mostrar Maior Número</button>
+  <p id="resultadoMaiorNumero"></p>
+
+  <h2>Ordenar Números</h2>
+  <p>Digite três números:</p>
+  <input type="number" id="num4">
+  <input type="number" id="num5">
+  <input type="number" id="num6">
+  <button onclick="mostrarNumerosOrdenados()">Mostrar Números Ordenados</button>
+  <p id="resultadoNumerosOrdenados"></p>
+
+  <script>
+    function mostrarMaiorNumero() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var num3 = parseFloat(document.getElementById("num3").value);
+      var resultado = maiorNumero(num1, num2, num3);
+      document.getElementById("resultadoMaiorNumero").innerHTML = "O maior número é: " + resultado;
+    }
+
+    function mostrarNumerosOrdenados() {
+      var num4 = parseFloat(document.getElementById("num4").value);
+      var num5 = parseFloat(document.getElementById("num5").value);
+      var num6 = parseFloat(document.getElementById("num6").value);
+      var resultado = ordenarNumeros(num4, num5, num6);
+      document.getElementById("resultadoNumerosOrdenados").innerHTML = "Os números ordenados são: " + resultado;
+    }
+  </script>
+</body>
+</html>
