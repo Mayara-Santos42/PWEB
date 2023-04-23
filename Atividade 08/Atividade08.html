@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa filme</title>
+    <link rel="stylesheet" type="text/css" href="Atividade08.css">
+    <script src="Atividade08.js"></script>
+</head>
+
+<body>
+    <form>
+        <h3>Pesquisa opnião filme</h3>
+        <label>Idade</label>
+        <input type="number" id="idade" max="120" min="1">
+        <br><br>
+        <label>Sexo</label><br>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label>Feminino</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label>Masculino</label>
+        <br><br>
+        <label>Opnião</label>
+        <select id="opniao">
+            <option value="4">Ótimo</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Péssimo</option>
+        </select>
+        <br><br>
+        <input onclick="salvarInformacao()" type="button" value="Enviar" id="enviar">
+        <input onclick="imprimirResultado()" type="button" value="Resultado" id="resultado">
+
+        
+        
+        <p id="media"></p>
+        <p id="maisVelha"></p>
+        <p id="maisNova"></p>
+        <p id="pessimo"></p>
+        <p id="otimo"></p>
+        <p id="mulheres"></p>
+        <p id="homens"></p>
+    </form>
+</body>
+
+</html>
