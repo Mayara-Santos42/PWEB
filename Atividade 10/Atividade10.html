@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<script>
+		var aluno1 = Object()
+		aluno1.ra = '0000232325'
+		aluno1.nome = 'Simap Pedro'
+		alert("ra=" + aluno1.ra + "nome=" + aluno1.nome)
+
+		var aluno2 = {}
+		aluno2.ra = "1230"
+		aluno2["nome"] = "Kelly"
+		alert("ra=" + aluno2.ra + "nome=" + aluno2.nome)
+
+		var aluno3 = {
+			ra: "123456",
+			nome: "Henrrique",
+		}
+
+		alert("ra=" + aluno3.ra + "nome=" + aluno3.nome)
+
+
+		function Aluno(ra, nome) {
+			this.ra = ra
+			this.nome = nome
+
+			this.MostrarDados = function () {
+				return "ra=" + this.ra + "nome=" + this.nome
+			}
+		}
+
+		var aluno4 = new Aluno("123", "LUcas")
+		aluno4.MostrarDados()
+
+		var aluno5 = {}
+		var nome_propriedade = "ra"
+		aluno5[nome_propriedade] = "123456"
+		aluno5["nome"] = "Jose"
+		alert(aluno5.ra + " " + aluno5.nome)
+
+		function Aluno2() {
+			var ra;
+			var nome;
+
+			this.setRa = function (value) {
+				this.ra = value
+			}
+
+			this.setNome = function (value) {
+				this.nome = value
+			}
+
+			this.getRa = function () {
+				return this.ra;
+			}
+
+			this.getNome = function () {
+				return this.nome;
+			}
+
+		}
+
+		var aluno6 = new Aluno2()
+		aluno6.setRa("23232")
+		aluno6.setNome("Nome do aluno")
+
+		alert(aluno6.getRa() + "" + aluno6.getNome())
+
+
+
+
+		function AlunoADS() {
+			var numLab;
+
+			this.setNumLab = function (valor) {
+				this.numLab = valor
+			}
+
+			this.getNumLab = function (valor) {
+				return this.numLab
+			}
+		}
+
+		AlunoADS.prototype = new Aluno2()
+
+		var aluno7 = new AlunoADS()
+		aluno7.setNome("Denilse")
+		aluno7.setRa("123")
+		aluno7.setNumLab("25")
+
+		alert(aluno7.getNome() + " " + aluno7.getNumLab() + " " + aluno7.getRa() )
+
+
+	</script>
+
+</body>
+
+</html>
