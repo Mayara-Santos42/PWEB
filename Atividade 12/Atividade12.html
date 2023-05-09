@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="Atividade12.css">
+  <title>Atividade 12</title>
+</head>
+
+<body>
+  <div>
+
+    <h2 id="titulo">Janela Fechada</h1>
+    <img id="janela" onmouseover="abrirJanela()" onclick="quebrarJanela()" onmouseout="fecharJanela()"
+      src="fechada.png" alt="">
+
+    <h2 id="titulo2">Janela Fechada</h1>
+    <img width="400px" id="janela2" src="fechada.png" alt="">
+
+  </div>
+  <script>
+    //  primeira janela
+    function abrirJanela() {
+      var janela = document.getElementById("janela");
+      var texto = document.getElementById('titulo');
+      janela.src = "aberta.png";
+      titulo.innerHTML = "Janela Aberta"
+
+    }
+    function quebrarJanela() {
+      var janela = document.getElementById("janela");
+      janela.src = "quebrada.png";
+
+      var texto = document.getElementById('titulo');
+      titulo.innerHTML = "Janela Quebrada"
+    }
+
+    function fecharJanela() {
+      var janela = document.getElementById("janela");
+      janela.src = "fechada.png";
+
+      var texto = document.getElementById('titulo');
+      titulo.innerHTML = "Janela Fechada"
+    }
+
+
+    function abrirJanela2() {
+      janela2.src = "aberta.png";
+      titulo2.innerHTML = "Janela Aberta"
+    }
+    function quebrarJanela2() {
+      janela2.src = "quebrada.png";
+      titulo2.innerHTML = "Janela Quebrada"
+    }
+    function fecharJanela2() {
+      janela2.src = "fechada.png";
+      titulo2.innerHTML = "Janela Fechada"
+    }
+
+    var janela2 = document.getElementById("janela2");
+    var texto2 = document.getElementById('titulo2');
+    document.getElementById('janela2').addEventListener('mouseover', abrirJanela2);
+    document.getElementById('janela2').addEventListener('click', quebrarJanela2);
+    document.getElementById('janela2').addEventListener('mouseout', fecharJanela2);
+
+
+  </script>
+</body>
+
+</html>
