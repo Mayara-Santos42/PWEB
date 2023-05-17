@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Atividade14.js"></script>
+</head>
+
+<body>
+    <form name="formulario">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="email">E-Mail: </label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="comentario">Comentário: </label><br>
+        <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea><br>
+        <p>
+        <h2>Pesquisa:</h2><br>
+        Primeira vez nessa página?</p>
+        <input type="radio" name="pesquisa" id="sim">
+        <label for="sim">Sim</label>
+        <input type="radio" name="pesquisa" id="nao">
+        <label for="nao">Não</label>
+        <br><br>
+        <input onclick="validarDados()" type="submit" value="Enviar">
+        <button onclick="limpar()">Limpar</button>
+    </form>
+</body>
+
+</html>
